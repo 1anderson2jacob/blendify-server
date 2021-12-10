@@ -34,9 +34,9 @@ const scopes = [ //needs trimmed to only necessary ones
 ];
 
 const spotifyApi = new SpotifyWebApi({
-  redirectUri: 'http://localhost:8888/callback',
-  clientId: process.env.CLIENT_ID,
-  clientSecret: process.env.CLIENT_SECRET,
+  redirectUri: redirect_uri,
+  clientId: client_id,
+  clientSecret: client_secret,
 });
 
 authRouter.get('/login', (req, res) => {
